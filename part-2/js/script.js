@@ -163,10 +163,22 @@ makePassword();
 // END problem 4
 */
 
-/*
+
 // BEGIN problem 5
-
-SKIPPED
-
-// End problem 5
+/*
+var entries = prompt("Please enter four country names - each separated by commas - to find out which is the longest name.");
+function longestWord() {
+    var str = entries.split(",");
+    var longest = 0;
+    var word = null;
+    str.forEach(function(str) {
+        if (longest < str.length) {
+            longest = str.length;
+            word = str;
+        }
+    });
+    console.log(word);
+}
+longestWord();
 */
+// End problem 5
